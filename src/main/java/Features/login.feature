@@ -3,7 +3,7 @@ Feature: Application login
 Scenario: Free CRM Login Test Scenerio
 Given User is present on login page
 When 	title of login page is FREE CRM
-Then user enters username "rajeev" and password "abcs"
+Then user enters username "raj" and password "abcs"
 And  user clicks on login button
 
 
