@@ -11,7 +11,7 @@ public class Uberbookingsteps {
 	     System.out.println("User is in Step1");
 	}
 
-	@When("user select car {string} and pick up point {string} and drop location {string}")
+	@When("^user select car \"([^\"]*)\" and pick up point \"([^\"]*)\" and drop location \"([^\"]*)\"$")
 	public void user_select_car_and_pick_up_point_and_drop_location(String carType, String Pickuppoint, String Droppoint) {
 	  
 		System.out.println("Step2" + carType + " " + Pickuppoint + " " + Droppoint );	

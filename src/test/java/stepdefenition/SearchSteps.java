@@ -29,7 +29,7 @@ public class SearchSteps {
 		System.out.println("Step 3:Enter the password");
 	}
 
-	@Then("User should be able to see {string} and {int} in search result.")
+	@Then("^User should be able to see \"([^\"]+)\" and (\\d+) in search result.$")
 	public void user_should_be_able_to_see_and_in_search_result(String Productname, Integer Price) {
 		System.out.println("Step 4:User search for the product named" + Productname + "price is" + Price);
 		search =new Search();
